@@ -16,12 +16,11 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
 TheSquad_v2/settings.py
 settings.py
-
-services/ts_constants.py
 
 .firebaserc
 firebase.json
 
-ts_test.py
+
