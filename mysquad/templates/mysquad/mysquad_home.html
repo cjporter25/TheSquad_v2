@@ -1,0 +1,27 @@
+<!-- Django does not use pure HTML, but instead, a backend framework
+     for defining templates called "Django Template Language" or DTL -->
+{% extends "homepage.html" %}
+
+{% block content %}
+        <h1>Welcome to TheSquad!</h1>
+        <p>Today is 08/02/23</p>
+        <p>Highest Winrate Assasin = {{ARAMAssWRs}}</p>
+        <p>Highest Winrate Enchanter = {{ARAMEncWRs}}</p>
+        <!--
+        <div class="row row-col3 g-2">
+           {% for metric in sqDATA %}
+           <div class="col">
+                <div class="p-3 border">
+                   <a class="text-dark text-decoration-non">
+                        <h3>
+                           {{ sqDATA.metric }}
+                        </h3>
+                   </a> {{sqDATA.metric}}
+                </div>
+           </div>
+           {% endfor %}
+        </div>
+        -->
+        
+
+{% endblock %}
