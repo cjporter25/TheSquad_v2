@@ -5,8 +5,36 @@
 {% block content %}
         <h1>Welcome to TheSquad!</h1>
         <p>Today is 08/02/23</p>
+        <p>********ARAM Main Stats********</p>
+        <p>ARAM - Total Matches Played = {{ARAMTotal}}</p>
+        <p>ARAM - Matches Won = {{ARAMWon}}</p>
+        <p>ARAM - Matches Lost = {{ARAMLost}}</p>
+        <p>ARAM - Winrate = {{ARAMWR}}</p>
+        <p>********ARAM Archetypes********</p>
         <p>Highest Winrate Assasin = {{ARAMAssWRs}}</p>
         <p>Highest Winrate Enchanter = {{ARAMEncWRs}}</p>
+        <p>Highest Winrate Fighter = {{ARAMFigWRs}}</p>
+        <p>Highest Winrate Mage = {{ARAMMagWRs}}</p>
+        <p>Highest Winrate Marksman = {{ARAMMarWRs}}</p>
+        <p>Highest Winrate Tank = {{ARAMTanWRs}}</p>
+        <p>********SR Main Stats********</p>
+        <p>SR - Total Matches Played = {{SRTotal}}</p>
+        <p>SR - Matches Won = {{SRWon}}</p>
+        <p>SR - Matches Lost = {{SRLost}}</p>
+        <p>SR - Winrate = {{SRWR}}</p>
+        <p>********Summoner's Rift Archetypes********</p>
+        <p>Highest Winrate Assasin = {{SRAssWRs}}</p>
+        <p>Highest Winrate Enchanter = {{SREncWRs}}</p>
+        <p>Highest Winrate Fighter = {{SRFigWRs}}</p>
+        <p>Highest Winrate Mage = {{SRMagWRs}}</p>
+        <p>Highest Winrate Marksman = {{SRMarWRs}}</p>
+        <p>Highest Winrate Tank = {{SRTanWRs}}</p>
+        <p>********Summoner's Rift Roles********</p>
+        <p>Highest Winrate Top = {{SRTopWRs}}</p>
+        <p>Highest Winrate Jungle = {{SRJunWRs}}</p>
+        <p>Highest Winrate Mid = {{SRMidWRs}}</p>
+        <p>Highest Winrate ADC = {{SRMarWRs}}</p>
+        <p>Highest Winrate Support = {{SRSupWRs}}</p>
         <!--
         <div class="row row-col3 g-2">
            {% for metric in sqDATA %}

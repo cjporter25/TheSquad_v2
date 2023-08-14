@@ -133,7 +133,7 @@ SQUAD_DATA = {u'ARAM_matchesLost': 0,
                 u'SR_matchesLost': 0,
                 u'SR_matchesPlayed': 0,
                 u'SR_matchesWon': 0,
-                u'SR_winrate:': 0.00}
+                u'SR_winrate': 0.00}
 
 CHAMP_DATA_VALUES = {  1: "Top",         2: "Jungle",
                        3: "Mid",         4: "Bottom",
