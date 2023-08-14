@@ -148,7 +148,7 @@ def validate_summoner_names(squadID, puuIDList, memberInfo, db):
             else:
                 dataBuilder.set({u'summonerName': newName}, merge=True)
 
-def build_squad(squad):
+def build_squad(squad, projStart):
 
     firebaseStart = time.time()
 
@@ -185,6 +185,9 @@ def build_squad(squad):
     firebaseEnd = time.time()
     totalFirebaseTime = round((firebaseEnd - firebaseStart), 2)
     EXE_META_DATA['exeTimeFirebase'] = totalFirebaseTime
+    totalProjTime = round((firebaseEnd - projStart), 2)
+    EXE_META_DATA['exeTimeWhole'] = totalProjTime
+    save_exe_meta_data(db)
     print("***Updated or Added Squad to Database Successfully***")
 def create_squad_data_set(squadID, squadSize, db):
     # Use builder to create squadID/"ID"/squadData/
@@ -342,8 +345,6 @@ def update_squad(squad, squadID, memberInfo, sharedMatchHistory, puuIDList, db):
     update_squad_SR_data_set(squadID, puuIDList, db)
 
     save_squad_data_to_squad(squad, db)
-    
-    save_exe_meta_data(db)
 
 # Update the ARAM match list with new matches that are shared and haven't been added
 #   yet.

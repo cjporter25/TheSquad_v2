@@ -20,9 +20,7 @@ class MySquadView(TemplateView):
                      'ARAMFigWRs' : sqData["ARAM_highestWinrate_Fighter"],
                      'ARAMMagWRs' : sqData["ARAM_highestWinrate_Mage"],
                      'ARAMMarWRs' : sqData["ARAM_highestWinrate_Marksman"],
-                     'ARAMSupWRs' : sqData["ARAM_highestWinrate_Support"],
                      'ARAMTanWRs' : sqData["ARAM_highestWinrate_Tank"]}
-    #data = json.dumps(EXE_META_DATA, indent=3)
-    #print(data)
+
     
 

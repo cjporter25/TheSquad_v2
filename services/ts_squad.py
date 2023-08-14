@@ -63,11 +63,10 @@ class Squad:
         EXE_META_DATA['exeTimeSquad'] = totalSquadTime
         print("***Squad Look-up Was Successful***")
 
-        build_squad(self)
-
-        projEnd = time.time()
-        totalExeTime = round((projEnd - projStart), 2)
-        EXE_META_DATA['exeTimeWhole'] = totalExeTime
+        build_squad(self, projStart)
+        #projEnd = time.time()
+        #totalExeTime = round((projEnd - projStart), 2)
+        #EXE_META_DATA['exeTimeWhole'] = totalExeTime
         self.show_squad_data()
 
         data = json.dumps(EXE_META_DATA, indent=3)
