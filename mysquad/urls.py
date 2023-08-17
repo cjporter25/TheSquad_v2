@@ -4,5 +4,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('mysquad', views.MySquadView.as_view()),
+    path('submit', views.MySquadSubmission.as_view()),
+    path('home', views.MySquadView.as_view()),
 ]

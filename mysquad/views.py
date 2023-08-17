@@ -5,6 +5,9 @@ from django.views.generic import TemplateView
 
 from services.ts_squad import *
 
+class MySquadSubmission(TemplateView):
+    template_name = 'mysquad/mysquad_submit.html'
+
 class MySquadView(TemplateView):
     # Target template
     template_name = 'mysquad/mysquad_home.html'
@@ -43,7 +46,8 @@ class MySquadView(TemplateView):
                      'SRJunWRs' : sqData["SR_highestWinrateJung"],
                      'SRMidWRs' : sqData["SR_highestWinrateMid"],
                      'SRSupWRs' : sqData["SR_highestWinrateSup"],
-                     'SRTopWRs' : sqData["SR_highestWinrateTop"]}
+                     'SRTopWRs' : sqData["SR_highestWinrateTop"],
+                     }
 
     
 
