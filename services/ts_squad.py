@@ -42,7 +42,7 @@ class Squad:
     def initialize(self, memberList, matchHistoryCount):
         projStart = time.time()
         squadStart = time.time()
-        init_firebase()
+        # init_firebase()
         apiKey = get_riot_api_key()
         self.set_member_list(memberList)
         self.show_member_list()

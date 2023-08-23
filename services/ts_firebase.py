@@ -13,6 +13,14 @@ import time
 # Specific firestore call that increments a reference value
 INCREMENT = firestore.Increment(1)
 
+cred = credentials.Certificate("firebase.json")
+#firebase_admin.initialize_app(cred)
+
+try:
+    firebase_admin.get_app()
+except ValueError:
+    firebase_admin.initialize_app(cred)
+
 #EXE_META_DATA = {
 #                 'firebaseExeTime' : 0.00,
 #                 'matchDataReqCount' : 0,
@@ -429,6 +437,7 @@ def analyze_shared_ARAM_match_list(squadID, puuIDList, db):
                             .document(u'SharedMatchLists') \
                             .collection(u'SharedARAMMatchList') \
                             .document(matchID.id)
+                    print("CURRENT MATCH = " + matchID.id)
                     currMatch.set({u'readStatus': True}, merge=True)
 def update_member_ARAM_data(squadID, puuID, champArch, winStatus, db):
     trueChampArch = CHAMP_DATA_VALUES[champArch]
