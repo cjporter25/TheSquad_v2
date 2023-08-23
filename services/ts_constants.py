@@ -262,7 +262,7 @@ TEST_SQUAD_ID_5_MEM = "abcdefghijklmnopqrst"
 
 KG_SQUAD_ID_3_MEM = "8I_GBKGG_aJU"
 
-TEST_SQUAD_LIST_02 = ["Chrispychickn25", "Serandipityyy"] # Didn't Work
+TEST_SQUAD_LIST_02 = ["Chrispychickn25", "Serandipityyy"] # WORKS NOW
 TEST_SQUAD_LIST_01 = ["Shensëi", "PureLunar", "Serandipityyy"] # Worked
 TEST_SQUAD_LIST_0 = ["Chrispychickn25", "Shensëi", "PureLunar", "Serandipityyy"] # Worked
 TEST_SQUAD_LIST_1 = ["Chrispychickn25", "Shensëi", "PureLunar"] # Worked
