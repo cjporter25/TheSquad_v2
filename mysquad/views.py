@@ -20,6 +20,7 @@ class MySquadView(TemplateView):
             #DEF_MATCH_HISTORY_COUNT = "20"
     squad.initialize(TEST_SQUAD_LIST_02, DEF_MATCH_HISTORY_COUNT)
 
+    # ADD FUNCTION TO CHECK FOR NEW CHAMPIONS.
     sqData = squad.get_squad_data()
     extra_context = {'sqDATA' : sqData,
                      'ARAMTotal' : sqData["ARAM_matchesPlayed"],
