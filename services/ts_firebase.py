@@ -10,7 +10,7 @@ import json
 import time
     #Event().wait(1)
 
-# Specific firestore call that increments a reference valu
+# Specific firestore call that increments a reference value
 INCREMENT = firestore.Increment(1)
 
 #EXE_META_DATA = {
@@ -96,22 +96,23 @@ def init_firebase():
     #cred = credentials.Certificate("C:/Users/Christopher Porter/Desktop/TheSquad_v2/services/firebase/firebase.json")
     cred = credentials.Certificate("firebase.json")
     firebase_admin.initialize_app(cred)
+    print("****************************************************INITIALIZING APP********************************************************")
 
 def get_riot_api_key():
-    #firebase_admin.initialize_app(cred)
+    # firebase_admin.initialize_app(cred)
     db = firestore.client()
 
-   #admin_ref = db.document(u'Admin/Keys') <- Should also work
+    # admin_ref = db.document(u'Admin/Keys') <- Should also work
     admin_ref = db.collection(u'Admin').document(u'Keys')
-    #Retrieve document from database
+    # Retrieve document from database
     keys = admin_ref.get() 
-    #Confirm the keys document exists
+    # Confirm the "keys" document exists
     if keys.exists:        
-        print("Key retrieval successful")       #If so, print success
-        return keys.to_dict().get("riotDevAPI") #Convert to useable dictionary
+        print("Key retrieval successful")       # If so, print success
+        return keys.to_dict().get("riotDevAPI") # Convert to useable dictionary
     else:                                       #   object. Get value from id
-        print("Key does not exist")             #If not, print failure
-        return " "                              #Return empty string
+        print("Key does not exist")             # If not, print failure and
+        return " "                              # Return empty string
 
 def check_squad_id(squadID, db):
     print("Looking for Squad ID in Database...")

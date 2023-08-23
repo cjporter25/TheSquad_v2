@@ -3,7 +3,6 @@
 #           information, add to what's already there, or analyze data
 from services.ts_riot_api import *
 from services.ts_firebase import *
-from services.ts_constants import *
 
 import time
 import json
@@ -130,7 +129,6 @@ class Squad:
         newSharedMatchList = {}
         squadMatchHistory = self.get_squad_match_history()
         numOfMembers = len(squadMatchHistory)
-        count = 0
         # Used first match history in the list as a reference list to compare against the others
         for matchID in squadMatchHistory[0]:
             wholeSquadPresent = True
@@ -141,11 +139,11 @@ class Squad:
             if (wholeSquadPresent == True):
                 match_stuff = get_match(matchID, apiKey)
                 self.set_riot_request_count(self.get_riot_request_count() + 1) #Increment count
-                # Retrieve specific match's info
+                # Save specific match's info
                 matchInfo = match_stuff['info']
-                # Retrieve specific match's metadata
+                # Save specific match's metadata
                 matchMetadata = match_stuff['metadata']
-                # Retrieve data that applies to all players
+                # Pull match data that applies to all players, i.e., game duration and mode
                 newMatchData = {'gameDuration' : matchInfo['gameDuration'],
                                 'gameMode' : matchInfo['gameMode'],
                                 }

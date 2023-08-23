@@ -262,13 +262,14 @@ TEST_SQUAD_ID_5_MEM = "abcdefghijklmnopqrst"
 
 KG_SQUAD_ID_3_MEM = "8I_GBKGG_aJU"
 
-TEST_SQUAD_LIST_01 = ["Shensëi", "PureLunar", "Serandipityyy"]
-TEST_SQUAD_LIST_0 = ["Chrispychickn25", "Shensëi", "PureLunar", "Serandipityyy"]
-TEST_SQUAD_LIST_1 = ["Chrispychickn25", "Shensëi", "PureLunar"]
-TEST_SQUAD_LIST_2 = ["Chrispychickn25", "Shensëi"]
-TEST_SQUAD_LIST_3 = ["Chrispychickn25", "PureLunar", "Serandipityyy"]
-TEST_SQUAD_LIST_4 = ["Shensëi", "PureLunar"]
-TEST_SQUAD_LIST_5 = ["PureLunar", "Serandipityyy"]
+TEST_SQUAD_LIST_02 = ["Chrispychickn25", "Serandipityyy"] # Didn't Work
+TEST_SQUAD_LIST_01 = ["Shensëi", "PureLunar", "Serandipityyy"] # Worked
+TEST_SQUAD_LIST_0 = ["Chrispychickn25", "Shensëi", "PureLunar", "Serandipityyy"] # Worked
+TEST_SQUAD_LIST_1 = ["Chrispychickn25", "Shensëi", "PureLunar"] # Worked
+TEST_SQUAD_LIST_2 = ["Chrispychickn25", "Shensëi"] # Worked
+TEST_SQUAD_LIST_3 = ["Chrispychickn25", "PureLunar", "Serandipityyy"] # Didn't Work
+TEST_SQUAD_LIST_4 = ["Shensëi", "PureLunar"] # Worked
+TEST_SQUAD_LIST_5 = ["PureLunar", "Serandipityyy"] # Worked
 TEST_SQUAD_LIST_6 = ["Hayasaka AÎ", "5brownmen", "SuperiorProblem", "Tonierbean", "Night635"]
 TEST_SQUAD_LIST_7 = ["Hayasaka AÎ", "RolledIce", "Umpahloompa", "Rocket1119", "Hy1107"]
 TEST_SQUAD_LIST_8 = ["Hayasaka AÎ", "RolledIce", "Umpahloompa", "Rocket1119", "Pikachupoffin"]
