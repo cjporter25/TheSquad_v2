@@ -11,6 +11,7 @@ class MySquadSubmission(TemplateView):
 class MySquadView(TemplateView):
     # Target template
     template_name = 'mysquad/mysquad_home.html'
+    #CONFIRMED IT STILL WORKS
 
     # NOTE: Test squad will eventually be replaced with a way for users to input on the site
     squad = Squad()
