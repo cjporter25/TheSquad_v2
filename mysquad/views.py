@@ -19,7 +19,7 @@ class MySquadView(TemplateView):
             #REC_MATCH_HISTORY_COUNT = "90"
             #MAX_MATCH_HISTORY_COUNT = "100"
             #DEF_MATCH_HISTORY_COUNT = "20"
-    squad.initialize(TEST_SQUAD_LIST_01, REC_MATCH_HISTORY_COUNT)
+    squad.initialize(TEST_SQUAD_LIST_0, REC_MATCH_HISTORY_COUNT)
 
     # ADD FUNCTION TO CHECK FOR NEW CHAMPIONS.
     sqData = squad.get_squad_data()
